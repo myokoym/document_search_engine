@@ -2,6 +2,13 @@
 
 <h1>Listing Documents</h1>
 
+<p><%= @documents.count %> records</p>
+
+<%= form_tag(documents_path, method: "get") do %>
+  <%= search_field_tag "query", params["query"] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
 <table>
   <thead>
     <tr>
