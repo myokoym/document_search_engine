@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = DocumentSearchEngine::VERSION
   s.authors     = ["Masafumi Yokoyama"]
   s.email       = ["myokoym@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of DocumentSearchEngine."
-  s.description = "TODO: Description of DocumentSearchEngine."
+  s.homepage    = "https://github.com/myokoym/document_search_engine"
+  s.summary     = "A sample of Mroonga on Rails Engine."
+  s.description = s.summary
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
