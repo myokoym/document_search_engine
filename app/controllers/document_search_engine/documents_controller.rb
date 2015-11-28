@@ -7,6 +7,10 @@ module DocumentSearchEngine
     # GET /documents
     def index
       @documents = Document.all
+      query = params[:query]
+      if query.present?
+        @documents = @documents.full_text_search(query)
+      end
     end
 
     # GET /documents/1
